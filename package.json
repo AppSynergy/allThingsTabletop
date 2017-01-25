@@ -1,0 +1,24 @@
+{
+  "name": "all-things-tabletop",
+  "version": "1.0.0",
+  "description": "Theme for http://allthingstabletop.proboards.com/",
+  "main": "index.js",
+  "scripts": {
+    "watch": "onchange 'sass/*.sass' -- npm run compile:sass",
+    "compile:sass": "node-sass --output-style compressed -o css sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AppSynergy/allThingsTabletop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AppSynergy/allThingsTabletop/issues"
+  },
+  "homepage": "https://github.com/AppSynergy/allThingsTabletop#readme",
+  "dependencies": {
+    "node-sass": "^4.3.0",
+    "onchange": "^3.2.1"
+  }
+}

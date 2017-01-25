@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css?family=Smythe|Open+Sans')
+
+html body
+  background-image: url('../img/background.jpg')
+  background-position: center top
+  background-size: contain
+  color: #111 !important
+
+  #news, #navigation-tree
+    display: none
+
+  a
+    color: white
+
+  .list a, .list .item.state-selected a, .stats .content a, .list .item>.main.state-hover .link a, .list .item:hover>.main .link a
+    color: #639bff
+    &:hover
+      color: #5fcde4
+
+  &, & a, & #welcome, & #welcome a, & #nav-tree>li a, & .boards .main .link a, & .container>.title-bar *, & abbr.time, & .last-edited, & #event_range .time, & #news, & .recent-threads-button, & .boards .main .description, & .boards .main .moderators
+    font-family: 'Open Sans', sans-serif
+
+  #navigation-menu
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+
+  .container > .title-bar,
+  #navigation-menu,
+  #navigation-menu a.state-active
+    background-color: #1A1717
+
+  // Font Replacements
+  .container > .title-bar .title_wrapper,
+  #navigation-menu li a,
+  #navigation-menu li a:hover,
+  #navigation-menu li a.state-active
+    font-family: 'Smythe', cursive !important
+    font-size: 26px
+    font-weight: 400
+    padding-top: 0.2em
+    padding-bottom: 0.2em
+
+  #banner-container
+    position: relative
+
+  h2#banner
+    background-color: transparent
+    text-align: left
+    height: 110px
+
+    a#logo
+      display: block
+      position: relative
+      margin-top: 20px
+      padding-left: 100px
+      padding-bottom: 10px
+      font-family: 'Smythe', cursive
+      font-size: 52px
+      letter-spacing: 1px
+
+    &:before
+      content: ''
+      display: inline-block
+      width: 100px
+      height: 100px
+      position: absolute
+      top: 0
+      left: 0
+      background-image: url('../img/Arms.png')
+      background-position: center -5px
